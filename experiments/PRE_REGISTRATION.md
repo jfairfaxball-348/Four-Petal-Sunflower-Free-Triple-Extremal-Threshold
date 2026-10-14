@@ -8,3 +8,7 @@ P001B-S000 administrative bootstrap only. Future P001B-S001 must write FROZEN ve
 - experiments/S001_PRE_REGISTRATION_v2.md SHA256 at local experiment freeze: c81d8ca6fa2408117170474cf9b634356ec8dc7fe2ca075e33b7276d520089e4; v2 C1/C2 before search.
 - Source witness sha256 1d9e73a5c0f60fb0526f1a2f31593a908d58e0989c2b4f0f92bc30654d3649cb; C1 cert sha256 a76dfb6436bc19d37839a6fb21a8ef76642ed1032cd326f0e9e36cedfd8f801e.
 - All experiments bounded to F39 local exchange. S002 new runs require separate prior frozen plan.
+
+## S002 complete frozen v1
+- experiments/S002_PRE_REGISTRATION_v1.md SHA256 `0f3976ddbe37111626f6da259f355e46d09bb01acd12c40b1efb0570d00a94b7`, written/hash-fixed BEFORE local solver invocation.
+- Full 286-triple population on 13 vertices, 40 selected, anchor (0,1,2), independent oracles, codegree3 + lazy quartet cuts, Python3.13.5/scipy1.17.0, 40-iteration/65s cap. Actual run stopped ITERATION_CAP. Results: experiments/S002_RUN_v1.md and S002_ITERATIONS_v1.csv. Not exhaustiveness.

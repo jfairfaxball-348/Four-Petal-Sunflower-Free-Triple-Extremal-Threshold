@@ -4,24 +4,33 @@
   "repository_id": 1418652673,
   "project": "P001B",
   "status": "RESEARCH_ACTIVE_NO_THRESHOLD_IMPROVEMENT",
-  "session_completed": "P001B-S001",
-  "session_completed_kind": "MATHEMATICS_REPRODUCTION_AND_RIGIDITY_CERTIFICATE",
-  "next_session": "P001B-S002",
+  "session_completed": "P001B-S002",
+  "session_completed_kind": "BOUNDED_INDEPENDENT_13_VERTEX_MILP_NO_CERTIFIED_EXHAUSTION",
+  "next_session": "P001B-S003",
   "next_executed": false,
   "first_mathematics_executed": true,
   "source_baseline": {
     "lower": 39,
     "upper": 49,
     "source": "arXiv:2609.06175v1",
-    "verification": "LOWER39_INDEPENDENT_EXACT_CHECK_UPPER49_AUTHOR_CERTIFICATE_IDENTIFIED_NOT_REPLAYED"
+    "verification": "LOWER39_REPLAYED_UPPER49_UNREPLAYED"
   },
   "mathematical_results": 1,
-  "novelty": "LOCAL_RIGIDITY_PRIORITY_UNCLEARED",
+  "novelty": "S001_LOCAL_RIGIDITY_PRIORITY_UNCLEARED_S002_NO_NEW_BOUND",
   "publication": "NOT_STARTED",
   "formalisation": "NOT_STARTED",
   "headline": "NONE_ESTABLISHED",
   "historic_initial_main": "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25",
   "bootstrap_date": "2026-10-14",
-  "decision": "CONTINUE",
-  "last_entry_main": "f80b61c45e121b3ae2ce9868f26684dc7244f68b"
+  "decision": "CONTINUE_ONCE_PROOF_FIRST",
+  "last_entry_main": "f21e1615815419b74ba03d996cac494678826ff1",
+  "s002": {
+    "pre_registration_sha256": "0f3976ddbe37111626f6da259f355e46d09bb01acd12c40b1efb0570d00a94b7",
+    "support_cutoff": 13,
+    "iterations": 40,
+    "cuts": 12095,
+    "search_outcome": "ITERATION_CAP_NOT_UNSAT",
+    "certified_bound": "NONE",
+    "ci_status": "TO_BE_VERIFIED_POST_PR"
+  }
 }
