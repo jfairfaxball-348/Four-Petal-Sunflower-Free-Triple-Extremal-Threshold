@@ -1,0 +1,3 @@
+# Decisions and risks
+
+2026-10-14 parent S001 retires ACTIVE P001A and selects independent finite P001B, while preserving grand Erdős–Rado headline. Parent S002 bootstraps *existing* child GitHub repository, no research. Default first mathematical lane: reconstruct source 39 and 49; bounded proof-first >=40 construction route with competing verified upper route only if universal reduction. Risks: post-v1 priority; mistaken 4-disjoint-edge EMPTY-kernel rejection; false symmetry pruning; unproved universe cutoff; solver result without proof certificate; conflating checker PASS with mathematics; spurious grand-conjecture extrapolation. Gating rule: STOP/parent reassess if source superseded or serious baseline inconsistency. No child S001 execution in bootstrap.

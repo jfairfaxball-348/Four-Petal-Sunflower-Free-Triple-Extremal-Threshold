@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "project_id": "P001B",
+  "name": "Four-Petal Sunflower-Free Triple Extremal Threshold",
+  "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+  "repository_id": 1418652673,
+  "parent_repository": "jfairfaxball-348/sunflower-structures-programme",
+  "parent_repository_id": 1412469441,
+  "retired_child": "jfairfaxball-348/sunflower-internal-kernel-extraction",
+  "status": "BOOTSTRAPPED_NOT_RESEARCH_EXECUTED",
+  "administrative_session": "P001B-S000",
+  "first_research_session": "P001B-S001",
+  "first_research_executed": false,
+  "target": "f(3,4) >= 40 or f(3,4) <= 48",
+  "headline_implication": "NONE_ESTABLISHED",
+  "source": "https://arxiv.org/abs/2609.06175"
+}

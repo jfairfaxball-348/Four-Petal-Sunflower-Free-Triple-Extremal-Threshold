@@ -1,0 +1,5 @@
+# P001B authority entry
+
+1. AGENTS.md; 2. project_manifest.json and authoritative/STATE.json; 3. authoritative/SESSION_PROTOCOL.md and STANDARDS.md; 4. research/TARGET.md, CLAIMS.json, SOURCES.json, NOVELTY_LEDGER.md, DECISIONS_AND_RISKS.md; 5. experiments/PRE_REGISTRATION.md; 6. sessions/HISTORY.md, sessions/S000/CLOSEOUT.md, sessions/AI_USE.md, validation/GITHUB_EVIDENCE.json, formalisation/STATUS.json, publication/STATUS.json; 7. sessions/NEXT_SESSION.md.
+
+ACTIVE CHILD https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold, ID 1418652673. Parent: https://github.com/jfairfaxball-348/sunflower-structures-programme. Retired child P001A preserved, NOT active. At S000 entry child main did not exist; first administrative main commit 6cdfc0c8eec3ac4143966bb76f04447ad81e1b25, subsequent normal PR integration. All latest SHA/CI evidence must be re-pinned live. No child mathematics undertaken in administrative bootstrap. The first standalone mathematics session P001B-S001 is FUTURE and requires a new user invocation in a separate conversation/project. Portfolio headline Erdős–Rado is open and distinct from this finite exact task.

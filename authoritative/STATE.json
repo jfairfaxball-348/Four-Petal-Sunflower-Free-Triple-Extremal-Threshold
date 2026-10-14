@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
+  "repository_id": 1418652673,
+  "project": "P001B",
+  "status": "BOOTSTRAPPED_NOT_RESEARCH_EXECUTED",
+  "session_completed": "P001B-S000",
+  "session_completed_kind": "ADMINISTRATIVE_BOOTSTRAP_ONLY",
+  "next_session": "P001B-S001",
+  "next_executed": false,
+  "first_mathematics_executed": false,
+  "source_baseline": {
+    "lower": 39,
+    "upper": 49,
+    "source": "arXiv:2609.06175v1",
+    "verification": "ABSTRACT_CONFIRMED_FULL_PROOF_AND_CERTIFICATE_UNVERIFIED"
+  },
+  "mathematical_results": 0,
+  "novelty": "UNCLAIMED",
+  "publication": "NOT_STARTED",
+  "formalisation": "NOT_STARTED",
+  "headline": "NONE_ESTABLISHED",
+  "historic_initial_main": "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25",
+  "bootstrap_date": "2026-10-14"
+}
