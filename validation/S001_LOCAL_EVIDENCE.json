@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "session": "P001B-S001",
+  "entry_main": "f80b61c45e121b3ae2ce9868f26684dc7244f68b",
+  "entry_tree": "b6f83a9dc89ebaf0de1db345a7f2539182b8f592",
+  "rulesets": [],
+  "branch_protection": "UNKNOWN_403",
+  "entry_status_contexts": "ABSENT_NOT_PASS",
+  "branch": "session/P001B-S001-39-rigidity",
+  "local_research": {
+    "python": "3.13.5",
+    "semantic_quartets": 82251,
+    "secondary": "PASS",
+    "unit_tests": "7 PASS local research implementation",
+    "full_s001_certificate": "PASS 521 cases * 2 disjoint exact obstruction quartets",
+    "witness_sha256": "1d9e73a5c0f60fb0526f1a2f31593a908d58e0989c2b4f0f92bc30654d3649cb",
+    "cert_sha256": "a76dfb6436bc19d37839a6fb21a8ef76642ed1032cd326f0e9e36cedfd8f801e"
+  },
+  "pr_exact_head_ci": "PENDING_AT_AUTHORED_COMMIT",
+  "post_merge_main_push_ci": "PENDING_AT_AUTHORED_COMMIT",
+  "note": "Future hosted CI not prospectively claimed. See live GitHub Actions/PR and final independent verification, not this immutable authored snapshot."
+}

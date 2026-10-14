@@ -1,0 +1,3 @@
+C1 processed 521 of 521 disjoint pairs 521 exceptions [] min/max obstruction triples 3 604 sha256 a76dfb6436bc19d37839a6fb21a8ef76642ed1032cd326f0e9e36cedfd8f801e duration_s 2.545
+C2 removals processed: 741 /741 admissible-singles aggregate: 54 max allowed after any two removals: 1 three-combinations checked: 0 found? False seconds 5.283
+Limit: no new f(3,4) lower/upper inequality; global lower40 and upper48 both OPEN.
