@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "access_date": "2026-10-14",
+  "primary": [
+    {
+      "authors": [
+        "Edward Axante",
+        "Cristian Budala",
+        "David Chitic",
+        "Bogdan Dumitru",
+        "Mihai Nacu"
+      ],
+      "title": "Sunflower-Free Uniform Families: Recursive Constructions and Explicit Bounds",
+      "url": "https://arxiv.org/abs/2609.06175",
+      "version": "v1 OBSERVED in secondary arXiv indexing; direct complete PDF/proof unreviewed",
+      "posted": "2026-09-05",
+      "reported": "39 <= f(3,4) <= 49; explicit lower, computer-assisted upper",
+      "evidence": "Arxiv indexed abstract and independent metadata mirrors",
+      "needs_verification": [
+        "live arXiv history after 2026-10-14",
+        "full theorem numbering and precise conventions",
+        "lower 39 edge list",
+        "upper 49 software/certificates",
+        "errata, competing preprints and published priority"
+      ]
+    }
+  ],
+  "context": [
+    {
+      "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/jlms.70380",
+      "type": "published survey",
+      "status": "background not verified in full for P001B"
+    },
+    {
+      "url": "https://github.com/jfairfaxball-348/sunflower-structures-programme/blob/main/programme/S001_SUCCESSOR_ASSESSMENT.md",
+      "type": "parent audit",
+      "status": "historical portfolio comparison not independent publication clearance"
+    }
+  ],
+  "scope": "Targeted public search 2026-10-14; no negative priority guarantee"
+}

@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "entry": "UNBORN_MAIN",
+  "initial_main": "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25",
+  "initialization_mode": "GitHub contents create_file on previously empty default main (exception: no parent or PR possible)",
+  "bootstrap_branch": "bootstrap/p001b-s000-governance",
+  "bootstrap_authored_commit": "PENDING_AT_FILE_AUTHORING",
+  "pull_request": "PENDING_VERIFICATION",
+  "pr_hosted_ci": "NOT_YET_OBSERVED",
+  "postmerge_main_ci": "NOT_YET_OBSERVED",
+  "branch_protection": "UNKNOWN_CONNECTOR_403",
+  "rulesets": "NONE_LISTED_ON_INITIAL_ENTRY",
+  "research_session_executed": false,
+  "note": "Immutable pre-merge snapshot; do not treat future CI placeholders as success. Actual verified receipt kept in parent S002 closeout."
+}

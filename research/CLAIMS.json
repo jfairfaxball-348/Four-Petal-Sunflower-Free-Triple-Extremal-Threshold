@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "claims": [
+    {
+      "id": "BASELINE-2026",
+      "statement": "39 <= f(3,4) <= 49",
+      "status": "ATTRIBUTED_PREPRINT_ABSTRACT_NOT_INDEPENDENTLY_VERIFIED",
+      "source": "https://arxiv.org/abs/2609.06175",
+      "version": "v1",
+      "note": "Upper 49 reported computer assisted, lower39 explicit; full proof and certificate not independently checked."
+    },
+    {
+      "id": "NEW-LOWER40",
+      "statement": "f(3,4) >= 40",
+      "status": "OPEN_NO_WITNESS",
+      "verification": null
+    },
+    {
+      "id": "NEW-UPPER48",
+      "statement": "f(3,4) <= 48",
+      "status": "OPEN_NO_PROOF",
+      "verification": null
+    },
+    {
+      "id": "HEADLINE",
+      "statement": "variable-rank Erdős–Rado improvement",
+      "status": "NONE_ESTABLISHED"
+    }
+  ]
+}
