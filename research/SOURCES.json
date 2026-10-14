@@ -12,7 +12,7 @@
       ],
       "title": "Sunflower-Free Uniform Families: Recursive Constructions and Explicit Bounds",
       "url": "https://arxiv.org/abs/2609.06175",
-      "version": "v1 verified directly on live arXiv submission history 2026-10-14 (only v1 displayed)",
+      "version": "v1 ONLY independently verified live arXiv submission history 2026-10-14 S002",
       "posted": "2026-09-05",
       "reported": "39 <= f(3,4) <= 49; explicit lower, computer-assisted upper",
       "evidence": "arXiv HTML arxiv.org/html/2609.06175v1 Sections 5.1,5.2–5.7, Theorems 5.1 and 5.10; author-linked GitHub source",
@@ -28,7 +28,7 @@
       ],
       "title": "Author implementation and F34 Lean proof",
       "url": "https://github.com/bogdan27182/sunflower-paper/tree/d4d5723267c662291efdadfa6e7061d919e76fa9",
-      "version": "d4d5723267c662291efdadfa6e7061d919e76fa9",
+      "version": "main d4d5723267c662291efdadfa6e7061d919e76fa9 independently rechecked 2026-10-14 S002",
       "evidence": "lean/Sunflower/F34.lean explicit f39; artifacts/f34_upper_49/README.md and check_certificates.sh inspected; script NOT run",
       "needs_verification": [
         "full 49 certificate replay",
@@ -46,6 +46,11 @@
       "url": "https://github.com/jfairfaxball-348/sunflower-structures-programme/blob/main/programme/S001_SUCCESSOR_ASSESSMENT.md",
       "type": "parent audit",
       "status": "historical portfolio comparison not independent publication clearance"
+    },
+    {
+      "url": "https://arxiv.org/html/2609.06175v1",
+      "type": "source Lemmas 2.2, 2.3 / CH(3,3)=10",
+      "status": "mathematical degree-bound consequence already present; no independent global <=48 advance"
     }
   ],
   "scope": "Direct primary arXiv history and HTML viewed 2026-10-14; author code read pinned commit; no evidence of superseding f(3,4) bound located in targeted search, not a comprehensive clearance."

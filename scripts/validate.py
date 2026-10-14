@@ -17,7 +17,7 @@ def check():
     assert state["repo"] == manifest["repo"] == REPO
     assert state["repository_id"] == manifest["repository_id"] == 1418652673
     assert manifest["parent_repository"] == "jfairfaxball-348/sunflower-structures-programme"
-    assert state["session_completed"] == "P001B-S001" and state["next_session"] == "P001B-S002"
+    assert state["session_completed"] == "P001B-S002" and state["next_session"] == "P001B-S003"
     assert state["status"] == manifest["status"] == "RESEARCH_ACTIVE_NO_THRESHOLD_IMPROVEMENT"
     assert state["next_executed"] is False and state["first_mathematics_executed"] is True
     assert manifest["first_research_executed"] is True and state["mathematical_results"] >= 1
@@ -25,15 +25,18 @@ def check():
     assert len(sources["primary"]) >= 1 and sources["primary"][0]["url"] == "https://arxiv.org/abs/2609.06175"
     assert evidence["initial_main"] == "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25"
     prompt = (ROOT/"sessions/NEXT_SESSION.md").read_text()
-    for s in ("P001B-S002",REPO,"P001B-S001","39", "EMPTY","six","F39","PR","CI"):
+    for s in ("P001B-S003",REPO,"P001B-S002","39", "EMPTY","six","F39","PR","CI"):
         assert s.lower() in prompt.lower(), "missing handoff token "+s
-    assert "P001B-S002" in prompt and "do not execute" in prompt.lower()
+    assert "P001B-S003" in prompt and "do not" in prompt.lower()
     assert (ROOT/"sessions/S001/CLOSEOUT.md").is_file(), "missing S001 closeout"
     assert re.fullmatch("[0-9a-f]{40}", state["historic_initial_main"])
     assert (ROOT/"experiments/S001_C1_CERTIFICATES.json").is_file()
     assert (ROOT/"experiments/S001_F39_edges.txt").is_file()
     assert (ROOT/"src/verify_s001_cert.py").is_file()
+    assert (ROOT/"sessions/S002/CLOSEOUT.md").is_file()
+    assert (ROOT/"experiments/S002_PRE_REGISTRATION_v1.md").is_file()
+    assert state["s002"]["search_outcome"] == "ITERATION_CAP_NOT_UNSAT"
     return True
 if __name__ == "__main__":
     assert check()
-    print("P001B S001 governance integrity PASS (proof and hosted CI independently classified)")
+    print("P001B S002 governance integrity PASS (finite search is not UNSAT)")
