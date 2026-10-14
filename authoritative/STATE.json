@@ -3,23 +3,25 @@
   "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
   "repository_id": 1418652673,
   "project": "P001B",
-  "status": "BOOTSTRAPPED_NOT_RESEARCH_EXECUTED",
-  "session_completed": "P001B-S000",
-  "session_completed_kind": "ADMINISTRATIVE_BOOTSTRAP_ONLY",
-  "next_session": "P001B-S001",
+  "status": "RESEARCH_ACTIVE_NO_THRESHOLD_IMPROVEMENT",
+  "session_completed": "P001B-S001",
+  "session_completed_kind": "MATHEMATICS_REPRODUCTION_AND_RIGIDITY_CERTIFICATE",
+  "next_session": "P001B-S002",
   "next_executed": false,
-  "first_mathematics_executed": false,
+  "first_mathematics_executed": true,
   "source_baseline": {
     "lower": 39,
     "upper": 49,
     "source": "arXiv:2609.06175v1",
-    "verification": "ABSTRACT_CONFIRMED_FULL_PROOF_AND_CERTIFICATE_UNVERIFIED"
+    "verification": "LOWER39_INDEPENDENT_EXACT_CHECK_UPPER49_AUTHOR_CERTIFICATE_IDENTIFIED_NOT_REPLAYED"
   },
-  "mathematical_results": 0,
-  "novelty": "UNCLAIMED",
+  "mathematical_results": 1,
+  "novelty": "LOCAL_RIGIDITY_PRIORITY_UNCLEARED",
   "publication": "NOT_STARTED",
   "formalisation": "NOT_STARTED",
   "headline": "NONE_ESTABLISHED",
   "historic_initial_main": "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25",
-  "bootstrap_date": "2026-10-14"
+  "bootstrap_date": "2026-10-14",
+  "decision": "CONTINUE",
+  "last_entry_main": "f80b61c45e121b3ae2ce9868f26684dc7244f68b"
 }

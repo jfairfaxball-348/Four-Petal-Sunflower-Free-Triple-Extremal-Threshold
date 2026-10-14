@@ -4,22 +4,46 @@
     {
       "id": "BASELINE-2026",
       "statement": "39 <= f(3,4) <= 49",
-      "status": "ATTRIBUTED_PREPRINT_ABSTRACT_NOT_INDEPENDENTLY_VERIFIED",
-      "source": "https://arxiv.org/abs/2609.06175",
-      "version": "v1",
-      "note": "Upper 49 reported computer assisted, lower39 explicit; full proof and certificate not independently checked."
+      "status": "ATTRIBUTED_PREPRINT",
+      "source": "arXiv:2609.06175v1 Theorems 5.1 and 5.10",
+      "verification": "39 lower independently checked with two semantic procedures, 49 upper full certificate not replayed"
+    },
+    {
+      "id": "CHECKED-F39",
+      "statement": "Explicit simple 39-triple F39 is 4-sunflower-free on thirteen support vertices.",
+      "status": "CHECKED_CONSTRUCTION",
+      "source": "Axante et al Theorem 5.1 PRIOR ART",
+      "verification": "82251 six-intersection four-tuples and independent kernel-matching checker; SHA256 1d9e73a5c0f60fb0526f1a2f31593a908d58e0989c2b4f0f92bc30654d3649cb"
+    },
+    {
+      "id": "S001-INCREMENTAL",
+      "statement": "If G is 4-sunflower-free, G+e is not iff there are three distinct old edges whose three pairwise intersections and three intersections with e are exactly the same set.",
+      "status": "PROVED",
+      "proof": "A new sunflower must contain e; the other three edges are old, and conversely six equal intersections construct one."
+    },
+    {
+      "id": "S001-RIGIDITY",
+      "statement": "For any triple e not in F39 (on an arbitrary ambient set) there are two 4-sunflowers in F39+e, each containing e, and with their respective three old petals disjoint as sets of edges. In particular no deletion of one old edge allows insertion of e.",
+      "status": "PROVED_COMPUTER_ASSISTED",
+      "verification": "Finite covering: at most three fresh vertices, rename into 13,14,15; complete 521-entry two-obstruction certificate a76dfb6436bc19d37839a6fb21a8ef76642ed1032cd326f0e9e36cedfd8f801e; independent six-intersection verifier verified all 1042 quartets."
+    },
+    {
+      "id": "S001-2DELETE",
+      "statement": "After deleting any 2 edges from the specific F39, at most 1 absent triple on original [0..12] may be inserted individually without causing a 4-sunflower.",
+      "status": "CHECKED_FINITE_NEGATIVE",
+      "verification": "Exhausted 741 pairs and 247 candidate edges each, max=1, aggregate addable=54, no ambient-independent extension claimed."
     },
     {
       "id": "NEW-LOWER40",
       "statement": "f(3,4) >= 40",
-      "status": "OPEN_NO_WITNESS",
-      "verification": null
+      "status": "OPEN",
+      "verification": "No 40-family found in registered local extension/exchange populations"
     },
     {
       "id": "NEW-UPPER48",
       "statement": "f(3,4) <= 48",
-      "status": "OPEN_NO_PROOF",
-      "verification": null
+      "status": "OPEN",
+      "verification": "No global reduction, no universal proof"
     },
     {
       "id": "HEADLINE",

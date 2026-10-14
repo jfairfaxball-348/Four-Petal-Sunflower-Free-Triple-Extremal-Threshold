@@ -17,20 +17,23 @@ def check():
     assert state["repo"] == manifest["repo"] == REPO
     assert state["repository_id"] == manifest["repository_id"] == 1418652673
     assert manifest["parent_repository"] == "jfairfaxball-348/sunflower-structures-programme"
-    assert state["session_completed"] == "P001B-S000" and state["next_session"] == "P001B-S001"
-    assert state["status"] == manifest["status"] == "BOOTSTRAPPED_NOT_RESEARCH_EXECUTED"
-    assert state["next_executed"] is False and state["first_mathematics_executed"] is False
-    assert manifest["first_research_executed"] is False and state["mathematical_results"] == 0
+    assert state["session_completed"] == "P001B-S001" and state["next_session"] == "P001B-S002"
+    assert state["status"] == manifest["status"] == "RESEARCH_ACTIVE_NO_THRESHOLD_IMPROVEMENT"
+    assert state["next_executed"] is False and state["first_mathematics_executed"] is True
+    assert manifest["first_research_executed"] is True and state["mathematical_results"] >= 1
     assert any(c["id"] == "BASELINE-2026" and "ATTRIBUTED" in c["status"] for c in claims["claims"])
     assert len(sources["primary"]) >= 1 and sources["primary"][0]["url"] == "https://arxiv.org/abs/2609.06175"
     assert evidence["initial_main"] == "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25"
     prompt = (ROOT/"sessions/NEXT_SESSION.md").read_text()
-    for s in ("P001B-S001",REPO,"1418652673","39 ≤ f(3,4) ≤ 49","EMPTY","six","SUN","P001A-S052","PR","CI"):
+    for s in ("P001B-S002",REPO,"P001B-S001","39", "EMPTY","six","F39","PR","CI"):
         assert s.lower() in prompt.lower(), "missing handoff token "+s
-    assert "P001B-S002" in prompt and "do NOT execute" in prompt
-    assert not list((ROOT/"sessions").glob("S001/CLOSEOUT.md")), "bootstrap cannot execute S001"
+    assert "P001B-S002" in prompt and "do not execute" in prompt.lower()
+    assert (ROOT/"sessions/S001/CLOSEOUT.md").is_file(), "missing S001 closeout"
     assert re.fullmatch("[0-9a-f]{40}", state["historic_initial_main"])
+    assert (ROOT/"experiments/S001_C1_CERTIFICATES.json").is_file()
+    assert (ROOT/"experiments/S001_F39_edges.txt").is_file()
+    assert (ROOT/"src/verify_s001_cert.py").is_file()
     return True
 if __name__ == "__main__":
     assert check()
-    print("P001B integrity PASS (administrative checks only; no mathematics or hosted CI inference)")
+    print("P001B S001 governance integrity PASS (proof and hosted CI independently classified)")
