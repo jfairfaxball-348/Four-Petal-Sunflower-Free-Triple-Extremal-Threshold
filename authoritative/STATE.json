@@ -3,10 +3,10 @@
   "repo": "jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold",
   "repository_id": 1418652673,
   "project": "P001B",
-  "status": "RESEARCH_ACTIVE_NO_THRESHOLD_IMPROVEMENT",
-  "session_completed": "P001B-S002",
-  "session_completed_kind": "BOUNDED_INDEPENDENT_13_VERTEX_MILP_NO_CERTIFIED_EXHAUSTION",
-  "next_session": "P001B-S003",
+  "status": "RESEARCH_PAUSED_PARENT_REASSESS",
+  "session_completed": "P001B-S003",
+  "session_completed_kind": "CYCLIC_Z12_EXACT24_RESTRICTED_LINK_EQUALITY_COUNTERMODELS",
+  "next_session": "P001B-S004",
   "next_executed": false,
   "first_mathematics_executed": true,
   "source_baseline": {
@@ -16,14 +16,14 @@
     "verification": "LOWER39_REPLAYED_UPPER49_UNREPLAYED"
   },
   "mathematical_results": 1,
-  "novelty": "S001_LOCAL_RIGIDITY_PRIORITY_UNCLEARED_S002_NO_NEW_BOUND",
+  "novelty": "S001_PRIORITY_UNCLEARED_S003_RESTRICTED_PRIORITY_UNCLEARED_NO_NEW_GLOBAL_BOUND",
   "publication": "NOT_STARTED",
   "formalisation": "NOT_STARTED",
   "headline": "NONE_ESTABLISHED",
   "historic_initial_main": "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25",
   "bootstrap_date": "2026-10-14",
-  "decision": "CONTINUE_ONCE_PROOF_FIRST",
-  "last_entry_main": "f21e1615815419b74ba03d996cac494678826ff1",
+  "decision": "RETURN_PARENT_REASSESS",
+  "last_entry_main": "d57e8e7b3e6cd3f532e0f18f466a2407c6a79bf1",
   "s002": {
     "pre_registration_sha256": "0f3976ddbe37111626f6da259f355e46d09bb01acd12c40b1efb0570d00a94b7",
     "support_cutoff": 13,
@@ -31,6 +31,20 @@
     "cuts": 12095,
     "search_outcome": "ITERATION_CAP_NOT_UNSAT",
     "certified_bound": "NONE",
-    "ci_status": "TO_BE_VERIFIED_POST_PR"
+    "ci_status": "VERIFIED_PR_AND_POSTMERGE_PUSH_SUCCESS"
+  },
+  "s003": {
+    "pre_registered_commit": "5683c00424d85f711faae72bc4aece2e2a3ec181",
+    "scope": "Z12_TRANSLATION_INVARIANT_ONLY",
+    "candidates": 988,
+    "free_counts": [
+      1,
+      13,
+      16,
+      0
+    ],
+    "cyclic_max": 24,
+    "certified_global_bound": "NONE",
+    "next_child_execution": "BLOCKED_PENDING_PARENT_REASSESS"
   }
 }
