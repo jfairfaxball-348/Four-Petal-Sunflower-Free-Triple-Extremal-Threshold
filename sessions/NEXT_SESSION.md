@@ -1,5 +1,7 @@
 # P001B-S004 — FUTURE ONLY, blocked pending parent portfolio decision
 
+Child repo: https://github.com/jfairfaxball-348/Four-Petal-Sunflower-Free-Triple-Extremal-Threshold
+
 **P001B-S003 completed. S004 NOT EXECUTED.** Execute exactly one new child mathematics session ONLY upon a fresh explicit owner invocation after parent programme has decided to continue P001B; do not treat this file as authority to execute now. No parent S003, retired P001A, S005, Lean, Palomar, manuscript, outreach or submission.
 
 ## First gate: parent continuation and full live repository audit
