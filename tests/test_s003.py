@@ -19,7 +19,7 @@ class S003CyclicTests(unittest.TestCase):
 
     def test_compact_obstruction_certificate(self):
         d=classify(); c=json.loads((ROOT/"experiments/S003_CYCLIC_CERTIFICATE.json").read_text())
-        self.assertEqual(c["free_counts"],{k:v["free"] for k,v in d["counts"].items()} if False else {int(k):v["free"] for k,v in d["counts"].items()})
+        self.assertEqual(c["free_counts"],{k:v["free"] for k,v in d["counts"].items()})
         free_pairs=set(tuple(p) for p in c["free_pairs"])
         self.assertEqual(free_pairs,set(tuple(p) for p in d["survivors"]["2"]))
         f=orbits()
