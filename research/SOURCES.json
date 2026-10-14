@@ -12,7 +12,7 @@
       ],
       "title": "Sunflower-Free Uniform Families: Recursive Constructions and Explicit Bounds",
       "url": "https://arxiv.org/abs/2609.06175",
-      "version": "v1 ONLY independently verified live arXiv submission history 2026-10-14 S002",
+      "version": "arXiv 2609.06175v1 ONLY in live submission history 2026-10-14 S003",
       "posted": "2026-09-05",
       "reported": "39 <= f(3,4) <= 49; explicit lower, computer-assisted upper",
       "evidence": "arXiv HTML arxiv.org/html/2609.06175v1 Sections 5.1,5.2–5.7, Theorems 5.1 and 5.10; author-linked GitHub source",
@@ -28,7 +28,7 @@
       ],
       "title": "Author implementation and F34 Lean proof",
       "url": "https://github.com/bogdan27182/sunflower-paper/tree/d4d5723267c662291efdadfa6e7061d919e76fa9",
-      "version": "main d4d5723267c662291efdadfa6e7061d919e76fa9 independently rechecked 2026-10-14 S002",
+      "version": "author main d4d5723267c662291efdadfa6e7061d919e76fa9 live GitHub branch rechecked 2026-10-14 S003",
       "evidence": "lean/Sunflower/F34.lean explicit f39; artifacts/f34_upper_49/README.md and check_certificates.sh inspected; script NOT run",
       "needs_verification": [
         "full 49 certificate replay",
@@ -51,7 +51,12 @@
       "url": "https://arxiv.org/html/2609.06175v1",
       "type": "source Lemmas 2.2, 2.3 / CH(3,3)=10",
       "status": "mathematical degree-bound consequence already present; no independent global <=48 advance"
+    },
+    {
+      "url": "https://doi.org/10.1016/0095-8956(76)90004-6",
+      "type": "Chvátal and Hanson 1976",
+      "status": "original max-degree/matching graph bound; prior art; not independently reproved"
     }
   ],
-  "scope": "Direct primary arXiv history and HTML viewed 2026-10-14; author code read pinned commit; no evidence of superseding f(3,4) bound located in targeted search, not a comprehensive clearance."
+  "scope": "Direct primary arXiv history and HTML viewed 2026-10-14; author code read pinned commit; no evidence of superseding f(3,4) bound located in targeted search, not a comprehensive clearance. S003 arXiv v1 only and author pin unchanged; Chvátal–Hanson 1976 graph theorem attributed; targeted updated query no definitive later f(3,4) bound located (not comprehensive)."
 }

@@ -12,3 +12,6 @@ P001B-S000 administrative bootstrap only. Future P001B-S001 must write FROZEN ve
 ## S002 complete frozen v1
 - experiments/S002_PRE_REGISTRATION_v1.md SHA256 `0f3976ddbe37111626f6da259f355e46d09bb01acd12c40b1efb0570d00a94b7`, written/hash-fixed BEFORE local solver invocation.
 - Full 286-triple population on 13 vertices, 40 selected, anchor (0,1,2), independent oracles, codegree3 + lazy quartet cuts, Python3.13.5/scipy1.17.0, 40-iteration/65s cap. Actual run stopped ITERATION_CAP. Results: experiments/S002_RUN_v1.md and S002_ITERATIONS_v1.csv. Not exhaustiveness.
+
+## S003 frozen before experiment
+- experiments/S003_PRE_REGISTRATION_v1.md committed as first S003 branch commit 5683c00424d85f711faae72bc4aece2e2a3ec181 BEFORE local run. Immutable original plan: all 988 cyclic Z12 orbit unions (0-3 ordinary orbits), source F39 controls, full quartet and separate matching/link/pair oracle. Completed 2.302 seconds Python3.13.5. See S003_RUN_v1.md, S003_CYCLIC_CERTIFICATE.json, S003_BEST_CYCLIC_edges.txt and src/s003_cyclic.py. Restricted result only.

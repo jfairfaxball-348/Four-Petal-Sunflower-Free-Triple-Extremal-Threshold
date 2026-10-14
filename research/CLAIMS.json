@@ -61,6 +61,18 @@
       "statement": "Any 40-member simple four-sunflower-free triple family needs at least 12 support vertices, with 12 support forcing all degrees 10.",
       "status": "PROVED_FROM_PUBLISHED_GRAPH_BOUND_PRIOR_ART",
       "proof": "Published link bound d(x)<=f(2,4)=CH(3,3)=10; sum degrees 120."
+    },
+    {
+      "id": "S003-CYCLIC12-EXACT",
+      "statement": "Among simple four-sunflower-free families of triples invariant under translation of Z/12, maximum size is 24.",
+      "status": "CERTIFICATE_CHECKED_RESTRICTED_FINITE_NOT_GLOBAL",
+      "verification": "Orbit decomposition 18 ordinary+1 exceptional, 988 complete unions; two independent oracles; 16 compatible pairs, eight explicitly witnessed triple-orbit obstructions; 24-edge SHA256 727fdeeb9239b0f23bc0d46f60d0cbc9e0180310d959cdb92ae1c74e7ba94802; bitmask 10626 quartets."
+    },
+    {
+      "id": "S003-LINK-SHORTCUT-COUNTEREXAMPLES",
+      "statement": "Subcubic matching-number-three 10-edge equality graphs exist on 7,8,9 nonisolated vertices; equality alone does not force seven.",
+      "status": "PROVED_BY_EXPLICIT_GRAPH_CONSTRUCTIONS_NOT_FULL_CLASSIFICATION",
+      "proof": "7: subdivided K3,3 edge. 8: R+K3. 9: R+K1,3, where R=K5-(P3 disjoint K2). Verify edge count, degree and matching."
     }
   ]
 }

@@ -17,15 +17,15 @@ def check():
     assert state["repo"] == manifest["repo"] == REPO
     assert state["repository_id"] == manifest["repository_id"] == 1418652673
     assert manifest["parent_repository"] == "jfairfaxball-348/sunflower-structures-programme"
-    assert state["session_completed"] == "P001B-S002" and state["next_session"] == "P001B-S003"
-    assert state["status"] == manifest["status"] == "RESEARCH_ACTIVE_NO_THRESHOLD_IMPROVEMENT"
+    assert state["session_completed"] == "P001B-S003" and state["next_session"] == "P001B-S004"
+    assert state["status"] == manifest["status"] == "RESEARCH_PAUSED_PARENT_REASSESS"
     assert state["next_executed"] is False and state["first_mathematics_executed"] is True
     assert manifest["first_research_executed"] is True and state["mathematical_results"] >= 1
     assert any(c["id"] == "BASELINE-2026" and "ATTRIBUTED" in c["status"] for c in claims["claims"])
     assert len(sources["primary"]) >= 1 and sources["primary"][0]["url"] == "https://arxiv.org/abs/2609.06175"
     assert evidence["initial_main"] == "6cdfc0c8eec3ac4143966bb76f04447ad81e1b25"
     prompt = (ROOT/"sessions/NEXT_SESSION.md").read_text()
-    for s in ("P001B-S003",REPO,"P001B-S002","39", "EMPTY","six","F39","PR","CI"):
+    for s in ("P001B-S004",REPO,"P001B-S003","39", "EMPTY","six","F39","PR","CI"):
         assert s.lower() in prompt.lower(), "missing handoff token "+s
     assert "P001B-S003" in prompt and "do not" in prompt.lower()
     assert (ROOT/"sessions/S001/CLOSEOUT.md").is_file(), "missing S001 closeout"
@@ -36,7 +36,12 @@ def check():
     assert (ROOT/"sessions/S002/CLOSEOUT.md").is_file()
     assert (ROOT/"experiments/S002_PRE_REGISTRATION_v1.md").is_file()
     assert state["s002"]["search_outcome"] == "ITERATION_CAP_NOT_UNSAT"
+    assert (ROOT/"sessions/S003/CLOSEOUT.md").is_file()
+    assert (ROOT/"experiments/S003_PRE_REGISTRATION_v1.md").is_file()
+    assert (ROOT/"experiments/S003_CYCLIC_CERTIFICATE.json").is_file()
+    assert (ROOT/"experiments/S003_BEST_CYCLIC_edges.txt").is_file()
+    assert state["s003"]["cyclic_max"] == 24 and state["decision"] == "RETURN_PARENT_REASSESS"
     return True
 if __name__ == "__main__":
     assert check()
-    print("P001B S002 governance integrity PASS (finite search is not UNSAT)")
+    print("P001B S003 governance integrity PASS (cyclic result is restricted)")
