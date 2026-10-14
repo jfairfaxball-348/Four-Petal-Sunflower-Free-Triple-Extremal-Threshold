@@ -1,0 +1,12 @@
+# S002 actual frozen v1 results — 2026-10-14
+
+Pre-execution frozen spec bytes SHA256: `0f3976ddbe37111626f6da259f355e46d09bb01acd12c40b1efb0570d00a94b7`.
+Original local execution script SHA256: `8c27e7a8baf3197b2732dc00a3949516e170580fa4527dad02f7557dce1637ea`; an equivalent standalone reproduction is in `src/s002_lazy_milp.py`. The source was run in Python 3.13.5 / scipy 1.17.0, using SciPy HiGHS. Original local run JSON SHA256: `1ce274aaf206181b62543562f7cba795d6b65e5cb4777684729567d09fae61e8`; terminal transcript SHA256 `ec6c815ce2e7887db29ce35c056ef821db19d169acbccfdceb25235c22a60003`. The latter original files are retained in the session local artifacts, while the complete compact per-iteration *counts* are archived here in `S002_ITERATIONS_v1.csv`. The reproduction source is not claimed bit-identical to the original script; a fresh reproducibility run should be separately reported.
+
+Controls before run PASS: source 39 triples SHA256 `1d9e73a5c0f60fb0526f1a2f31593a908d58e0989c2b4f0f92bc30654d3649cb`; independently, all 82,251 exact six-set-intersection quartets are sunflower-free, and matching/link/codegree test passed. Empty, singleton, pair-kernel positives and unequal-sets/duplicate controls passed.
+
+**Search population**: full 286 triples on vertices 0–12, selected exactly 40 at a time; edge (0,1,2) anchored (lossless because relabelling any one member of a 40-family maps it there). Pair codegrees <=3 and lazy exact 4-sunflower exclusion cuts. No F39 seed and no assumed isomorphism class.
+
+**Outcome ITERATION_CAP (NOT UNSAT).** Exactly 40 integral feasible solutions of successive relaxations tested, all failed independently checked sunflower-free conditions. Every incumbent yielded at least one quartet of 4-sunflower edges. 12,095 distinct valid cuts added (new cuts per round in CSV, sums to 12,095); none lost by symmetry heuristics. MILP statuses 0 = each successive *relaxation* solved optimally, NOT a proof of impossibility for the original system. Local elapsed ~9.136 s. Frozen cap was 40 iterations (wall 65s); the earlier cap terminated the run. No valid 40-family; **no certified nonexistence at n<=13** and **no universal bound <=48**. No 40 witness CSV because nothing was found.
+
+**Important**: Dynamic cuts imply a sound accumulating relaxation: every genuine sunflower-free family satisfies each cut. They do not imply all sunflowers are enumerated by the iteration cap. Numerical branch-and-bound solver success here is an intermediate status, not a final search certificate.

@@ -49,6 +49,18 @@
       "id": "HEADLINE",
       "statement": "variable-rank Erdős–Rado improvement",
       "status": "NONE_ESTABLISHED"
+    },
+    {
+      "id": "S002-13-BOUND-SEARCH",
+      "statement": "Full 286 triple variables on [0,12], 40-element feasibility with lossless one-edge anchor and sound cut separation; 40 successive invalid incumbents and 12095 distinct cuts; not exhausted.",
+      "status": "PARTIAL_BOUNDED_NEGATIVE_NOT_UNSAT",
+      "verification": "Python 3.13.5 scipy 1.17.0; frozen v1; two independent sunflower semantics on candidates; iteration cap 40."
+    },
+    {
+      "id": "S002-MIN-SUPPORT",
+      "statement": "Any 40-member simple four-sunflower-free triple family needs at least 12 support vertices, with 12 support forcing all degrees 10.",
+      "status": "PROVED_FROM_PUBLISHED_GRAPH_BOUND_PRIOR_ART",
+      "proof": "Published link bound d(x)<=f(2,4)=CH(3,3)=10; sum degrees 120."
     }
   ]
 }
